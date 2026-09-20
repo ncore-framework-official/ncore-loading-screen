@@ -1,13 +1,21 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ncore-framework-official/.github/main/profile/assets/branding/ncore-loading-screen-official.webp" alt="NCore Loading Screen official visual identity" width="1100">
+  <img src="https://raw.githubusercontent.com/ncore-framework-official/.github/main/profile/assets/branding/ncore-loading-screen-official.webp" alt="NCore Loading Screen official visual identity" width="460">
 </p>
 
 <h1 align="center">NCore Loading Screen</h1>
 
 <p align="center"><strong>Écran de chargement officiel NCore pour NANOS / nanos world.</strong></p>
 
-> **Statut public : page produit officielle.**
-> Aucune release publique de NCore Loading Screen n'est annoncée dans ce dépôt pour le moment.
+<p align="center">
+  <img src="https://img.shields.io/badge/Statut-Page_produit_publique-17C0E4?style=for-the-badge" alt="Page produit publique">
+  <img src="https://img.shields.io/badge/Release-Aucune_annoncée-6E7781?style=for-the-badge" alt="Aucune release annoncée">
+  <a href="https://discord.gg/Ey4dn4Cbqj">
+    <img src="https://img.shields.io/badge/Discord-Officiel-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord officiel">
+  </a>
+</p>
+
+> **Statut public : page produit officielle.**  
+> Aucune release publique de NCore Loading Screen n'est annoncée dans ce dépôt pour le moment.  
 > Le code source, les GDD internes, les outils de qualification et les éléments de développement privés ne sont pas publiés ici.
 
 ## Français
@@ -32,12 +40,12 @@ Ne doivent pas être publiés ici :
 - logs sensibles ou données joueur ;
 - éléments provenant d'un dépôt privé NCore sans validation de publication.
 
-### Liens officiels
+### Support
 
+- **Discord officiel :** https://discord.gg/Ey4dn4Cbqj
 - **Organisation NCore Framework :** https://github.com/ncore-framework-official
 - **Branding officiel :** https://github.com/ncore-framework-official/.github/blob/main/BRANDING.md
-- **Support public :** https://github.com/ncore-framework-official/.github/blob/main/SUPPORT.md
-- **Discord officiel :** https://discord.gg/Ey4dn4Cbqj
+- **Support public :** voir [SUPPORT.md](SUPPORT.md)
 
 ---
 
@@ -45,18 +53,24 @@ Ne doivent pas être publiés ici :
 
 **NCore Loading Screen** is the official NCore loading-screen package for **NANOS / nanos world** servers.
 
-This repository is currently the official public product page. No public release is announced here yet.
+### Current public status
+
+This repository is the official public product page. No public NCore Loading Screen release is announced here yet.
 
 Only material explicitly approved for public distribution belongs in this repository. Private source code, internal GDDs, development or qualification tooling, production configuration, secrets, sensitive logs and player data must remain outside the public repository.
 
-Official organization: https://github.com/ncore-framework-official
-
 ---
 
-## Rights / Droits
+## Public distribution
 
-This repository is public, but its original NCore content is not automatically open source.
+This repository contains only approved public NCore Loading Screen presentation, documentation, rights and support information.
 
-See [LICENSE.md](LICENSE.md) and [NOTICE.md](NOTICE.md).
+Internal development material is not published here.
+
+## Licensing / Licences
+
+- [Public repository rights](LICENSE.md)
+- [Official public product notice](NOTICE.md)
+- [Public support](SUPPORT.md)
 
 Copyright © 2026 Gosse Nicolas (Boubeur). All Rights Reserved.
