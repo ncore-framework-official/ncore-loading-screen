@@ -7,16 +7,16 @@
 <p align="center"><strong>Écran de chargement officiel NCore pour NANOS / nanos world.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Statut-Version_publique-17C0E4?style=for-the-badge" alt="Version publique">
+  <img src="https://img.shields.io/badge/Statut-WIP-F0A500?style=for-the-badge" alt="Work in progress">
   <img src="https://img.shields.io/badge/Version-0.5.1-6E7781?style=for-the-badge" alt="Version 0.5.1">
   <a href="https://discord.gg/Ey4dn4Cbqj">
     <img src="https://img.shields.io/badge/Discord-Officiel-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord officiel">
   </a>
 </p>
 
-> **Statut public : version 0.5.1.**  
-> Le code présent dans ce dépôt correspond au miroir public-safe qualifié de `ncore-loading-screen`.  
-> Les GDD internes, outils de qualification, configuration de production et autres éléments privés restent hors du dépôt public.
+> **Statut public : WIP.**  
+> La version de travail actuelle est **0.5.1**. Le code présent dans ce dépôt correspond au miroir public-safe qualifié de `ncore-loading-screen`.  
+> La publication Vault/Store NANOS reste en cours ; les GDD internes, outils de qualification, configuration de production et autres éléments privés restent hors du dépôt public.
 
 ## Français
 
