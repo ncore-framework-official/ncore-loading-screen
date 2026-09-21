@@ -19,7 +19,7 @@
 
 > **Statut public : WIP.**  
 > La version de travail actuelle est **0.5.1**. Le code présent dans ce dépôt correspond au miroir public-safe qualifié de `ncore-loading-screen`.  
-> La publication Vault/Store NANOS reste en cours ; les GDD internes, outils de qualification, configuration de production et autres éléments privés restent hors du dépôt public.
+> La version **0.5.1** est publiée sur le Vault/Store NANOS ; les GDD internes, outils de qualification, configuration de production et autres éléments privés restent hors du dépôt public.
 
 ## Français
 
@@ -95,6 +95,7 @@ loading_screen = "ncore-loading-screen"
 
 - Discord officiel : https://discord.gg/Ey4dn4Cbqj
 - GitHub officiel : https://github.com/ncore-framework-official/ncore-loading-screen
+- Vault / Store NANOS : https://nanos-world.com/store/packages/ncore-loading-screen
 - Soutenir NCore / Ko-fi : https://ko-fi.com/ncoreframework
 
 Dans le loading screen, cliquer sur ces entrées copie l'URL dans le presse-papiers au lieu de naviguer dans le WebUI CEF.
@@ -181,6 +182,7 @@ loading_screen = "ncore-loading-screen"
 
 - Official Discord: https://discord.gg/Ey4dn4Cbqj
 - Official GitHub: https://github.com/ncore-framework-official/ncore-loading-screen
+- NANOS Vault / Store: https://nanos-world.com/store/packages/ncore-loading-screen
 - Support NCore / Ko-fi: https://ko-fi.com/ncoreframework
 
 Inside the loading screen, clicking these entries copies the URL to the clipboard instead of navigating the CEF WebUI.
@@ -198,5 +200,5 @@ NCore Loading Screen is proprietary NCore software. Rights for an official copy 
 
 - Discord officiel : https://discord.gg/Ey4dn4Cbqj
 - Organisation NCore Framework : https://github.com/ncore-framework-official
-- Soutenir NCore / Ko-fi : [SUPPORT-NCORE.md](SUPPORT-NCORE.md)
+- Soutenir NCore / Ko-fi : https://ko-fi.com/ncoreframework
 - Support : [SUPPORT.md](SUPPORT.md)
