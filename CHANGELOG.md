@@ -15,7 +15,8 @@
 - cible Git publique officielle alignée sur `ncore-framework-official/ncore-loading-screen` ;
 - playlist audio durcie contre les boucles d'échec et miroir public-safe resynchronisé ;
 - liens Discord/Git sécurisés contre la navigation interne CEF : clic = copie de l'URL ;
-- publication conditionnée à la qualification runtime 0.5.1 et au gate final de publication.
+- qualification runtime 0.5.1 clôturée pour la baseline publiée ;
+- version 0.5.1 publiée sur le nanos world Vault/Store le 2026-09-21.
 
 
 ---
@@ -35,4 +36,5 @@
 - official public Git target aligned with `ncore-framework-official/ncore-loading-screen`;
 - audio playlist hardened against failure loops and public-safe mirror resynchronized;
 - Discord/Git footer links protected against in-CEF navigation: click copies the URL;
-- publication requires the 0.5.1 runtime qualification and final publication gate.
+- 0.5.1 runtime qualification closed for the published baseline;
+- version 0.5.1 published on the nanos world Vault/Store on 2026-09-21.
