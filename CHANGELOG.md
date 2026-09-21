@@ -17,15 +17,6 @@
 - liens Discord/Git sécurisés contre la navigation interne CEF : clic = copie de l'URL ;
 - publication conditionnée à la qualification runtime 0.5.1 et au gate final de publication.
 
-### 0.5.0 — 2026-09-20
-
-- runtime loading-screen NANOS standalone ;
-- localisation FR/EN ;
-- progression NANOS réelle et timeline ;
-- branding officiel NCore et fonds slideshow locaux ;
-- audio optionnel `file`, `url` et YouTube best-effort ;
-- lecture locale WebM/Opus qualifiée ;
-- raccourci global Espace supprimé ; flèches haut/bas conservées pour le volume.
 
 ---
 
@@ -45,13 +36,3 @@
 - audio playlist hardened against failure loops and public-safe mirror resynchronized;
 - Discord/Git footer links protected against in-CEF navigation: click copies the URL;
 - publication requires the 0.5.1 runtime qualification and final publication gate.
-
-### 0.5.0 — 2026-09-20
-
-- standalone NANOS loading-screen runtime;
-- FR/EN localization;
-- real NANOS progress and stage timeline;
-- official NCore branding and local slideshow backgrounds;
-- optional `file`, `url`, and best-effort YouTube audio;
-- local WebM/Opus playback qualified;
-- global Space shortcut removed; Arrow Up/Down retained for volume.
