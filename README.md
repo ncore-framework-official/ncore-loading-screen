@@ -7,70 +7,190 @@
 <p align="center"><strong>Écran de chargement officiel NCore pour NANOS / nanos world.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Statut-Page_produit_publique-17C0E4?style=for-the-badge" alt="Page produit publique">
-  <img src="https://img.shields.io/badge/Release-Aucune_annoncée-6E7781?style=for-the-badge" alt="Aucune release annoncée">
+  <img src="https://img.shields.io/badge/Statut-Version_publique-17C0E4?style=for-the-badge" alt="Version publique">
+  <img src="https://img.shields.io/badge/Version-0.5.1-6E7781?style=for-the-badge" alt="Version 0.5.1">
   <a href="https://discord.gg/Ey4dn4Cbqj">
     <img src="https://img.shields.io/badge/Discord-Officiel-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord officiel">
   </a>
 </p>
 
-> **Statut public : page produit officielle.**  
-> Aucune release publique de NCore Loading Screen n'est annoncée dans ce dépôt pour le moment.  
-> Le code source, les GDD internes, les outils de qualification et les éléments de développement privés ne sont pas publiés ici.
+> **Statut public : version 0.5.1.**  
+> Le code présent dans ce dépôt correspond au miroir public-safe qualifié de `ncore-loading-screen`.  
+> Les GDD internes, outils de qualification, configuration de production et autres éléments privés restent hors du dépôt public.
 
 ## Français
 
 ### Présentation
 
-**NCore Loading Screen** est le package officiel NCore dédié à l'expérience de chargement des serveurs NCore sur **NANOS / nanos world**.
+`ncore-loading-screen` est un écran de chargement NANOS autonome. Il fonctionne sans `ncore-core`, sans base de données et sans dépendance gameplay.
 
-Cette page publique sert à présenter le produit et, lorsqu'une version sera explicitement approuvée pour diffusion, à publier uniquement les éléments publics nécessaires : documentation, changelog, artefacts de release et informations d'intégrité.
+### Fonctionnalités
 
-### Distribution publique
+- progression réelle fournie par NANOS via `UpdateScreen` ;
+- timeline compacte des étapes de chargement ;
+- interface française et anglaise avec fallback anglais ;
+- trois fonds NCore locaux en slideshow ;
+- fond vidéo WebM local optionnel ;
+- audio local WebM/OGG optionnel ;
+- URL audio HTTPS directe optionnelle ;
+- lecture YouTube optionnelle en mode best-effort ;
+- musique désactivée par défaut pour privilégier la stabilité NANOS/CEF ;
+- identité visuelle officielle NCore ;
+- aucun framework JavaScript lourd et aucun CDN obligatoire.
 
-Ce dépôt ne contient que du contenu explicitement validé pour diffusion publique.
+### Structure
 
-Ne doivent pas être publiés ici :
+```text
+ncore-loading-screen/
+├── Package.toml
+├── index.html
+├── Config/
+│   └── config.js
+├── Script/
+│   ├── config-runtime.js
+│   ├── app.js
+│   └── style.css
+├── Licenses/
+│   ├── LICENSE.md
+│   ├── COPYRIGHT.md
+│   └── NOTICE.md
+├── Languages/
+│   ├── fr.js
+│   └── en.js
+└── assets/
+```
 
-- code propriétaire non approuvé pour diffusion ;
-- GDD internes ;
-- outils de développement ou de qualification ;
-- secrets, tokens, webhooks ou endpoints privés ;
-- configuration de production ;
-- logs sensibles ou données joueur ;
-- éléments provenant d'un dépôt privé NCore sans validation de publication.
+`Package.toml` et `index.html` restent à la racine conformément au contrat NANOS du type `loading-screen`.
 
-### Support
+### Configuration
 
-- **Discord officiel :** https://discord.gg/Ey4dn4Cbqj
-- **Organisation NCore Framework :** https://github.com/ncore-framework-official
-- **Branding officiel :** https://github.com/ncore-framework-official/.github/blob/main/BRANDING.md
-- **Support public :** voir [SUPPORT.md](SUPPORT.md)
+La configuration utilisateur se trouve uniquement dans `Config/config.js`. Le fichier est organisé en sections courtes et lisibles ; les réglages techniques restent internes à `Script/config-runtime.js`, qui construit et valide la configuration effective.
+
+Le schéma de configuration courant est `schemaVersion = 1`.
+
+Valeurs audio par défaut :
+
+```text
+music.enabled = false
+music.mode    = "youtube"
+music.volume  = 0.60
+```
+
+Lorsque la musique est activée, le bouton du mini-player gère pause/reprise. Les flèches haut/bas règlent le volume. Il n'existe pas de raccourci global Espace.
+
+
+### Installation NANOS
+
+Le loading screen NANOS nécessite un serveur dédié. Vérifiez que `dedicated_server = true`, puis placez le package dans `Packages/ncore-loading-screen` et configurez :
+
+```toml
+[game]
+loading_screen = "ncore-loading-screen"
+```
+
+### Liens officiels
+
+- Discord officiel : https://discord.gg/Ey4dn4Cbqj
+- GitHub officiel : https://github.com/ncore-framework-official/ncore-loading-screen
+
+Dans le loading screen, cliquer sur ces entrées copie l'URL dans le presse-papiers au lieu de naviguer dans le WebUI CEF.
+
+### Licence
+
+Voir `Licenses/LICENSE.md`, `Licenses/AI-POLICY.md`, `Licenses/COPYRIGHT.md` et `Licenses/NOTICE.md`.
+
+NCore Loading Screen est un logiciel propriétaire NCore. Les droits d'utilisation d'une copie officielle sont définis par la licence incluse dans le package.
 
 ---
 
 ## English
 
-**NCore Loading Screen** is the official NCore loading-screen package for **NANOS / nanos world** servers.
+### Overview
 
-### Current public status
+`ncore-loading-screen` is a standalone NANOS loading screen. It works without `ncore-core`, without a database, and without gameplay dependencies.
 
-This repository is the official public product page. No public NCore Loading Screen release is announced here yet.
+### Features
 
-Only material explicitly approved for public distribution belongs in this repository. Private source code, internal GDDs, development or qualification tooling, production configuration, secrets, sensitive logs and player data must remain outside the public repository.
+- real loading progress provided by NANOS through `UpdateScreen`;
+- compact loading-stage timeline;
+- French and English UI with English fallback;
+- three local NCore slideshow backgrounds;
+- optional local WebM video background;
+- optional local WebM/OGG audio;
+- optional direct HTTPS audio URL;
+- optional best-effort YouTube playback;
+- music disabled by default for NANOS/CEF stability;
+- official NCore visual identity;
+- no heavy JavaScript framework and no mandatory CDN.
+
+### Layout
+
+```text
+ncore-loading-screen/
+├── Package.toml
+├── index.html
+├── Config/
+│   └── config.js
+├── Script/
+│   ├── config-runtime.js
+│   ├── app.js
+│   └── style.css
+├── Licenses/
+│   ├── LICENSE.md
+│   ├── COPYRIGHT.md
+│   └── NOTICE.md
+├── Languages/
+│   ├── fr.js
+│   └── en.js
+└── assets/
+```
+
+`Package.toml` and `index.html` stay at package root as required by the NANOS `loading-screen` contract.
+
+### Configuration
+
+User configuration is located only at `Config/config.js`. The file is organized into short, readable sections; technical settings remain internal to `Script/config-runtime.js`, which builds and validates the effective configuration.
+
+The current configuration schema is `schemaVersion = 1`.
+
+Default audio policy:
+
+```text
+music.enabled = false
+music.mode    = "youtube"
+music.volume  = 0.60
+```
+
+When music is enabled, the mini-player button controls pause/resume. Arrow Up/Down controls volume. There is no global Space shortcut.
+
+
+### NANOS installation
+
+NANOS loading screens require a dedicated server. Make sure `dedicated_server = true`, then place the package under `Packages/ncore-loading-screen` and configure:
+
+```toml
+[game]
+loading_screen = "ncore-loading-screen"
+```
+
+### Official links
+
+- Official Discord: https://discord.gg/Ey4dn4Cbqj
+- Official GitHub: https://github.com/ncore-framework-official/ncore-loading-screen
+
+Inside the loading screen, clicking these entries copies the URL to the clipboard instead of navigating the CEF WebUI.
+
+### License
+
+See `Licenses/LICENSE.md`, `Licenses/AI-POLICY.md`, `Licenses/COPYRIGHT.md`, and `Licenses/NOTICE.md`.
+
+NCore Loading Screen is proprietary NCore software. Rights for an official copy are defined by the license included with the package.
+
 
 ---
 
-## Public distribution
+## Support public
 
-This repository contains only approved public NCore Loading Screen presentation, documentation, rights and support information.
-
-Internal development material is not published here.
-
-## Licensing / Licences
-
-- [Public repository rights](LICENSE.md)
-- [Official public product notice](NOTICE.md)
-- [Public support](SUPPORT.md)
-
-Copyright © 2026 Gosse Nicolas (Boubeur). All Rights Reserved.
+- Discord officiel : https://discord.gg/Ey4dn4Cbqj
+- Organisation NCore Framework : https://github.com/ncore-framework-official
+- Support : [SUPPORT.md](SUPPORT.md)

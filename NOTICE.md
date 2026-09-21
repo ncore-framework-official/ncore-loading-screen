@@ -1,23 +1,23 @@
-# NCore Loading Screen — Official Public Product Notice / Avis de page produit publique officielle
+# NCore Loading Screen — Official Public Repository Notice / Avis du dépôt public officiel
 
 Copyright © 2026 Gosse Nicolas (Boubeur). All Rights Reserved.
 
 ## Français
 
-Ce dépôt est la **page produit publique officielle** de **NCore Loading Screen** au sein de l'organisation **NCore Framework**.
+Ce dépôt est le dépôt public officiel de **NCore Loading Screen** au sein de l'organisation **NCore Framework**.
 
-À la date du 20 septembre 2026, aucune release publique de NCore Loading Screen n'est annoncée dans ce dépôt.
+La version publique courante est **0.5.1**. Le code distribué ici correspond exclusivement au miroir public-safe validé pour diffusion.
 
-Toute future publication devra respecter la séparation stricte entre contenu public et contenu privé NCore.
+Les GDD internes, outils de développement et de qualification, secrets, configuration de production, logs sensibles et données joueur restent strictement hors du dépôt public.
 
-Aucun dépôt privé, GDD interne, outil de développement, qualification, secret, configuration de production, log sensible ou code source propriétaire non explicitement approuvé pour diffusion ne doit être publié ici.
+La licence du package est disponible dans `Licenses/LICENSE.md`.
 
 ## English
 
-This repository is the **official public product page** for **NCore Loading Screen** within the **NCore Framework** organization.
+This repository is the official public repository for **NCore Loading Screen** within the **NCore Framework** organization.
 
-As of September 20, 2026, no public NCore Loading Screen release is announced in this repository.
+The current public version is **0.5.1**. Code distributed here is limited to the public-safe mirror approved for distribution.
 
-Any future publication must preserve the strict separation between public and private NCore material.
+Internal GDDs, development and qualification tooling, secrets, production configuration, sensitive logs, and player data remain strictly outside the public repository.
 
-No private repository, internal GDD, development tooling, qualification material, secret, production configuration, sensitive log or unpublished proprietary source code may be published here.
+The package license is available in `Licenses/LICENSE.md`.

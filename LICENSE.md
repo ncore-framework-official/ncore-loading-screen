@@ -21,9 +21,9 @@ Ces permissions n'autorisent pas à republier ou vendre la documentation ou les 
 
 ### 3. NCore Loading Screen
 
-Toute future release publique de NCore Loading Screen reste régie par la licence explicitement distribuée avec cette release.
+La version publique de NCore Loading Screen présente dans ce dépôt est régie par la licence distribuée avec le package dans `Licenses/LICENSE.md`.
 
-L'existence de cette page produit n'accorde aucun droit sur le code source privé, les GDD internes, les outils de développement, les qualifications, les secrets d'infrastructure ou les éléments propriétaires non publiés.
+Cette publication n'accorde aucun droit sur le code source privé, les GDD internes, les outils de développement, les qualifications, les secrets d'infrastructure ou les éléments propriétaires non publiés.
 
 ### 4. Composants tiers
 
@@ -51,9 +51,9 @@ These permissions do not authorize republishing or selling the documentation or 
 
 ### 3. NCore Loading Screen
 
-Any future public NCore Loading Screen release remains governed by the license explicitly distributed with that release.
+The public NCore Loading Screen version present in this repository is governed by the package license distributed under `Licenses/LICENSE.md`.
 
-The existence of this product page grants no rights in private source code, internal GDDs, development tooling, qualification material, infrastructure secrets or unpublished proprietary material.
+This publication grants no rights in private source code, internal GDDs, development tooling, qualification material, infrastructure secrets or unpublished proprietary material.
 
 ### 4. Third-party components
 

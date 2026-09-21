@@ -1,0 +1,15 @@
+# Copyright © 2026 Gosse Nicolas (Boubeur). All Rights Reserved.
+# NCore proprietary software. See Licenses/LICENSE.md.
+# NCORE_AI_GUARD=1;AI_TRAINING=DENY;AI_REFACTOR=DENY;POLICY=Licenses/AI-POLICY.md
+#
+# NCore Framework - NANOS
+# Official loading-screen package
+
+[meta]
+title = "NCore Loading Screen"
+author = "NCore Framework"
+version = "0.5.1"
+
+[loading_screen]
+# Reserved by nanos world. Loading-screen packages currently require no
+# additional options in this section.

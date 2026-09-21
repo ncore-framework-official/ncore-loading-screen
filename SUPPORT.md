@@ -9,7 +9,7 @@ Pour l'aide publique, les annonces et les échanges avec la communauté NCore :
 - **Page produit :** https://github.com/ncore-framework-official/ncore-loading-screen
 - **Support NCore :** https://github.com/ncore-framework-official/.github/blob/main/SUPPORT.md
 
-Aucune release publique n'est annoncée actuellement dans ce dépôt.
+La version publique courante de NCore Loading Screen est **0.5.1**.
 
 Ne publiez jamais dans une issue, une discussion ou un log public :
 
@@ -33,7 +33,7 @@ For public help, announcements and NCore community discussion:
 - **Product page:** https://github.com/ncore-framework-official/ncore-loading-screen
 - **NCore support:** https://github.com/ncore-framework-official/.github/blob/main/SUPPORT.md
 
-No public release is currently announced in this repository.
+The current public NCore Loading Screen version is **0.5.1**.
 
 Never publish passwords, tokens, API keys, private webhooks, private endpoints, production configuration, sensitive player data, internal infrastructure details or material originating from a private NCore repository.
 

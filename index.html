@@ -1,0 +1,104 @@
+<!--
+  Copyright © 2026 Gosse Nicolas (Boubeur). All Rights Reserved.
+  NCore proprietary software. See Licenses/LICENSE.md.
+  NCORE_AI_GUARD=1;AI_TRAINING=DENY;AI_REFACTOR=DENY;POLICY=Licenses/AI-POLICY.md
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>NCore Loading Screen</title>
+    <link rel="stylesheet" href="Script/style.css">
+</head>
+<body>
+    <div class="background" aria-hidden="true">
+        <div id="backgroundA" class="background-layer is-visible"></div>
+        <div id="backgroundB" class="background-layer"></div>
+        <video id="backgroundVideo" class="background-video" muted loop playsinline preload="metadata"></video>
+        <audio id="loadingMusic" preload="auto"></audio>
+        <div id="youtubeMusic" class="youtube-music" aria-hidden="true"></div>
+        <div class="background-shade"></div>
+        <div class="background-grain"></div>
+    </div>
+
+    <main class="loading-screen">
+        <header class="header">
+            <div class="header-wordmark" aria-label="NCore Framework">
+                <img
+                    class="header-wordmark-logo"
+                    src="assets/branding/ncore-logo-transparent.svg"
+                    alt="NCore Framework">
+            </div>
+        </header>
+
+        <section class="hero" aria-labelledby="serverName">
+            <p id="heroKicker" class="hero-kicker">WELCOME TO</p>
+            <h1 id="serverName">NCORE</h1>
+            <p id="serverDescription" class="hero-description">A new way to experience roleplay.</p>
+        </section>
+
+        <section class="status" aria-live="polite">
+            <div class="status-head">
+                <div class="status-copy">
+                    <span id="stageName" class="stage-name">INITIALIZING</span>
+                    <strong id="primaryMessage">Preparing your session…</strong>
+                </div>
+                <div id="overallPercent" class="percent">—</div>
+            </div>
+
+            <div id="overallTrack" class="progress-track" aria-label="Loading progress">
+                <div id="overallBar" class="progress-fill"></div>
+            </div>
+
+            <div class="detail-line">
+                <span id="secondaryMessage">Loading the NANOS environment…</span>
+                <span id="subprogressPercent"></span>
+            </div>
+
+            <ol id="stageTimeline" class="stage-timeline" aria-label="Loading stages">
+                <li data-stage-key="connection"><i></i><span>Connection</span></li>
+                <li data-stage-key="download"><i></i><span>Resources</span></li>
+                <li data-stage-key="assets"><i></i><span>Assets</span></li>
+                <li data-stage-key="level"><i></i><span>Level</span></li>
+                <li data-stage-key="entities"><i></i><span>Entities</span></li>
+                <li data-stage-key="shaders"><i></i><span>Shaders</span></li>
+                <li data-stage-key="finishing"><i></i><span>Finishing</span></li>
+            </ol>
+
+            <div class="tip-line">
+                <span id="tipLabel" class="tip-label">INFO</span>
+                <span id="tipText">NCore is preparing your game environment.</span>
+            </div>
+        </section>
+
+        <div id="audioControls" class="audio-controls" aria-label="Music controls">
+            <div class="audio-control-row">
+                <button id="musicToggle" class="audio-button audio-toggle" type="button" aria-label="Pause music">Ⅱ</button>
+                <button id="volumeDown" class="audio-button" type="button" aria-label="Decrease volume">−</button>
+                <span id="volumeValue" class="audio-volume">60%</span>
+                <button id="volumeUp" class="audio-button" type="button" aria-label="Increase volume">+</button>
+                <span id="audioState" class="audio-state" hidden>READY</span>
+            </div>
+        </div>
+
+        <aside id="ncoreControlBrand" class="ecosystem-signature" aria-label="NCore Control">
+            <span class="ecosystem-signature-copy">
+                <strong>NCORE CONTROL</strong>
+                <small id="ncoreControlSubtitle">INSTALLATION · MANAGEMENT · NANOS</small>
+            </span>
+        </aside>
+
+        <nav id="officialLinks" class="official-links" aria-label="Official NCore links">
+            <button id="officialDiscordLink" type="button">Official Discord</button>
+            <span aria-hidden="true">•</span>
+            <button id="officialGitLink" type="button">Official Git</button>
+        </nav>
+    </main>
+
+    <script src="Config/config.js"></script>
+    <script src="Script/config-runtime.js"></script>
+    <script src="Script/app.js"></script>
+</body>
+</html>
