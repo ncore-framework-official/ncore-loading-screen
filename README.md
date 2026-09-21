@@ -12,6 +12,9 @@
   <a href="https://discord.gg/Ey4dn4Cbqj">
     <img src="https://img.shields.io/badge/Discord-Officiel-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord officiel">
   </a>
+  <a href="https://ko-fi.com/ncoreframework">
+    <img src="https://img.shields.io/badge/Ko--fi-Soutenir_NCore-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Soutenir NCore sur Ko-fi">
+  </a>
 </p>
 
 > **Statut public : WIP.**  
@@ -92,6 +95,7 @@ loading_screen = "ncore-loading-screen"
 
 - Discord officiel : https://discord.gg/Ey4dn4Cbqj
 - GitHub officiel : https://github.com/ncore-framework-official/ncore-loading-screen
+- Ko-fi officiel : https://ko-fi.com/ncoreframework
 
 Dans le loading screen, cliquer sur ces entrées copie l'URL dans le presse-papiers au lieu de naviguer dans le WebUI CEF.
 
@@ -177,6 +181,7 @@ loading_screen = "ncore-loading-screen"
 
 - Official Discord: https://discord.gg/Ey4dn4Cbqj
 - Official GitHub: https://github.com/ncore-framework-official/ncore-loading-screen
+- Official Ko-fi: https://ko-fi.com/ncoreframework
 
 Inside the loading screen, clicking these entries copies the URL to the clipboard instead of navigating the CEF WebUI.
 
@@ -193,4 +198,5 @@ NCore Loading Screen is proprietary NCore software. Rights for an official copy 
 
 - Discord officiel : https://discord.gg/Ey4dn4Cbqj
 - Organisation NCore Framework : https://github.com/ncore-framework-official
+- Ko-fi officiel : https://ko-fi.com/ncoreframework
 - Support : [SUPPORT.md](SUPPORT.md)
